@@ -1,12 +1,20 @@
 ﻿using System;
 
-namespace guessing_game
+Console.WriteLine("Guess a number between 1-10!");
+
+void SecretNumber()
 {
-    class Program
+    Console.Write("Your guess: ");
+    string answer = Console.ReadLine();
+    string correctAnswer = "5";
+    if (answer == correctAnswer)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Console.WriteLine("You are correct!");
+    }
+    else if (answer != correctAnswer)
+    {
+        Console.WriteLine("That is incorrect, sorry!");
     }
 }
+
+SecretNumber();
